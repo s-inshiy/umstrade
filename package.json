@@ -1,0 +1,28 @@
+{
+  "name": "test.must3r",
+  "version": "1.0.0",
+  "description": "My test site while learning GULP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello World\";"
+  },
+  "author": "must3r",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "bower": "^1.8.0",
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-htmlhint": "^0.3.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "jquery": "^3.1.1"
+  }
+}
