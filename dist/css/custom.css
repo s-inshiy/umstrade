@@ -76,3 +76,18 @@ h1 {
   padding: 20px;
   text-align: justify;
   text-indent: 2em; }
+
+.trinity {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .trinity__block {
+    width: 30%;
+    text-align: justify;
+    text-indent: 2em; }
+    .trinity__block p {
+      margin-top: -2px;
+      padding: 10px 15px; }
