@@ -1,6 +1,117 @@
+// Variables
 $black: #212121;
+$purple: #6C6296;
+$body-bg: url('../images/body-bg.png');
+// Extra materials
+// Style code itself
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
 
 body {
-  background-color: $black;
-  color: #fff;
+    background: $body-bg;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.menu {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 20px;
+        margin-right: -1px;
+        list-style: none;
+
+        li {
+            font-size: 16px;
+
+            &:nth-child(2) {
+                margin-left: -1px;
+                margin-right: -22px;
+                // a:after {
+                //   content: " ▼";
+                // }
+            }
+
+            &:nth-child(3) {
+                padding: 0 20px;
+                z-index: 1;
+
+                img {
+                    height: 120px;
+                    border: 6px solid $purple;
+                    border-radius: 10px;
+                    padding: 10px;
+                }
+            }
+
+            &:nth-child(4) {
+                margin-left: -21px;
+            }
+
+            &:last-child {
+                margin-left: -1px;
+
+                a {
+                    color: #FFCC80;
+
+                    span {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            a {
+                background-color: $purple;
+                padding: 20px 25px;
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: #9A91BC;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.bordered {
+    border: 2px solid $purple;
+}
+
+.purple-back {
+    background-color: $purple;
+    color: #fff;
+}
+
+.info-block {
+    img {
+      margin: 0;
+      padding: 20px;
+    }
+    p {
+      padding: 20px;
+      text-align: justify;
+      text-indent: 2em;
+    }
 }
