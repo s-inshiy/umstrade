@@ -130,3 +130,12 @@ h1 {
     }
   }
 }
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    &--center {
+        align-items: center;
+        align-content: stretch;
+    }
+}

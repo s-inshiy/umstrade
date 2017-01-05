@@ -92,3 +92,14 @@ h1 {
       margin-top: -2px;
       padding: 10px 15px; }
 
+.flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .flex--center {
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch; }
+
