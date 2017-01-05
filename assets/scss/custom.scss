@@ -1,5 +1,6 @@
 // Variables
 $black: #212121;
+$orange: #FF9800;
 $purple: #6C6296;
 $body-bg: url('../images/body-bg.png');
 // Extra materials
@@ -114,6 +115,7 @@ h1 {
       text-align: justify;
       text-indent: 2em;
     }
+    
 }
 
 .trinity {
@@ -131,6 +133,14 @@ h1 {
   }
 }
 
+.news {
+    position: relative;
+    padding: 20px;
+    img {
+        width: 30%;
+    }
+}
+
 .flex {
     display: flex;
     flex-flow: row wrap;
@@ -138,4 +148,36 @@ h1 {
         align-items: center;
         align-content: stretch;
     }
+}
+
+.button {
+    background-color: $purple;
+    color: #fff;
+    padding: 5px 10px;
+    float: right;
+    margin-right: 10px;
+    line-height: 2;
+    &:hover {
+        background-color: $orange;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.imgleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.imgright {
+    float: right;
+    margin-left: 20px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }

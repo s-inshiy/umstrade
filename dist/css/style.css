@@ -92,6 +92,12 @@ h1 {
       margin-top: -2px;
       padding: 10px 15px; }
 
+.news {
+  position: relative;
+  padding: 20px; }
+  .news img {
+    width: 30%; }
+
 .flex {
   display: -ms-flexbox;
   display: flex;
@@ -102,4 +108,30 @@ h1 {
     align-items: center;
     -ms-flex-line-pack: stretch;
     align-content: stretch; }
+
+.button {
+  background-color: #6C6296;
+  color: #fff;
+  padding: 5px 10px;
+  float: right;
+  margin-right: 10px;
+  line-height: 2; }
+  .button:hover {
+    background-color: #FF9800;
+    color: #fff;
+    text-decoration: none; }
+
+.imgleft {
+  float: left;
+  margin-right: 20px; }
+
+.imgright {
+  float: right;
+  margin-left: 20px; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
 
