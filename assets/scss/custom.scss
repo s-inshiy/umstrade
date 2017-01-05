@@ -2,9 +2,9 @@
 $black: #212121;
 $orange: #FF9800;
 $purple: #6C6296;
-$body-bg: url('../images/body-bg.png');
-// Extra materials
+$body-bg: url('../images/body-bg.png'); // Extra materials
 // Style code itself
+
 * {
     margin: 0;
     padding: 0;
@@ -107,35 +107,38 @@ h1 {
 
 .info-block {
     img {
-      margin: 0;
-      padding: 20px;
+        margin: 0;
+        padding: 20px;
     }
+
     p {
-      padding: 20px;
-      text-align: justify;
-      text-indent: 2em;
+        padding: 20px;
+        text-align: justify;
+        text-indent: 2em;
     }
-    
 }
 
 .trinity {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  &__block {
-    width:30%;
-    text-align:justify;
-    text-indent: 2em;
-    p {
-      margin-top: -2px;
-      padding: 10px 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    &__block {
+        width: 30%;
+        text-align: justify;
+        text-indent: 2em;
+
+        p {
+            margin-top: -2px;
+            padding: 10px 15px;
+        }
     }
-  }
 }
 
 .news {
     position: relative;
     padding: 20px;
+
     img {
         width: 30%;
     }
@@ -144,6 +147,7 @@ h1 {
 .flex {
     display: flex;
     flex-flow: row wrap;
+
     &--center {
         align-items: center;
         align-content: stretch;
@@ -151,16 +155,31 @@ h1 {
 }
 
 .button {
+    display: block;
     background-color: $purple;
     color: #fff;
     padding: 5px 10px;
-    float: right;
     margin-right: 10px;
     line-height: 2;
+
     &:hover {
         background-color: $orange;
         color: #fff;
         text-decoration: none;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &--big {
+        padding: 15px 20px;
+        text-transform: uppercase;
+        margin-right: 0;
+        font-size: 18px;
     }
 }
 

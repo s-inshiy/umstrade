@@ -110,16 +110,24 @@ h1 {
     align-content: stretch; }
 
 .button {
+  display: block;
   background-color: #6C6296;
   color: #fff;
   padding: 5px 10px;
-  float: right;
   margin-right: 10px;
   line-height: 2; }
   .button:hover {
     background-color: #FF9800;
     color: #fff;
     text-decoration: none; }
+  .button:active, .button:visited, .button:focus {
+    color: #fff;
+    text-decoration: none; }
+  .button--big {
+    padding: 15px 20px;
+    text-transform: uppercase;
+    margin-right: 0;
+    font-size: 18px; }
 
 .imgleft {
   float: left;
