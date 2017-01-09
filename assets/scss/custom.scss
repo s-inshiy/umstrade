@@ -11,14 +11,15 @@ $body-bg: url('../images/topback.png'); // Extra materials
     padding: 0;
     box-sizing: border-box;
     outline: none;
+
     ::selection {
-      color: #fff;
-      background: $orange;
+        color: #fff;
+        background: $orange;
     }
 }
 
 body {
-
+    position: relative;
 }
 
 h1 {
@@ -35,8 +36,10 @@ h1 {
 }
 
 .menu {
-  position: relative;
-  z-index: 5;
+    position: relative;
+    z-index: 5;
+    padding-left: 10%;
+
     ul {
         display: flex;
         justify-content: center;
@@ -47,15 +50,18 @@ h1 {
         list-style: none;
 
         li {
+            position: relative;
             font-size: 16px;
+
             &:nth-child(2) {
                 position: relative;
                 margin-left: -1px;
                 margin-right: -22px;
+
                 &:hover {
-                  ul {
-                    display:flex !important;
-                  }
+                    ul {
+                        display: flex !important;
+                    }
                 }
             }
 
@@ -72,17 +78,6 @@ h1 {
                 margin-left: -21px;
             }
 
-            &:last-child {
-                margin-left: -1px;
-
-                a {
-                    color: #FFCC80;
-
-                    span {
-                        padding: 0 5px;
-                    }
-                }
-            }
 
             a {
                 background-color: $purple;
@@ -94,48 +89,77 @@ h1 {
                     background-color: $purple-light;
                 }
             }
+            .glyphicon {
+              transform: scale(1.6);
+              z-index: 0;
+            }
+            .notification {
+              position: absolute;
+              background-color: $orange;
+              text-align: center;
+              height: 20px;
+              width: 20px;
+              border-radius: 50%;
+              bottom: -5px;
+              z-index: 1;
+            }
+        }
+
+        .contacts {
+            margin-left: -1px;
+
+            a {
+                color: #FFCC80;
+
+                span {
+                    padding: 0 5px;
+                }
+            }
         }
     }
 }
 
 .drpdwn-link {
-  &:after {
-    content: " ▼";
-  }
+    &:after {
+        content: " ▼";
+    }
 }
 
 .drpdwn-menu {
-  flex-direction: column;
-  display: none !important;
-  position: absolute;
-  width: 100%;
-  top: 20px;
-  li {
-    display: block;
+    flex-direction: column;
+    display: none !important;
+    position: absolute;
     width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    a {
-      display: block;
-      color:#fff !important;
+    top: 19.4px;
+
+    li {
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        a {
+            display: block;
+            color: #fff !important;
+        }
     }
-  }
 }
 
 .topback {
-  position: absolute;
-  background: $body-bg;
-  background-repeat: repeat-x;
-  background-position: 0 -25%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+    position: absolute;
+    background: $body-bg;
+    background-repeat: repeat-x;
+    background-position: 0 -25%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .logo {
-  border: 6px solid $purple;
-  border-radius: 10px;
+    border: 6px solid $purple;
+    border-radius: 10px;
 }
 
 .content {
@@ -146,8 +170,17 @@ h1 {
     border: 2px solid $purple;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .purple-back {
     background-color: $purple;
+    color: #fff;
+}
+
+.purple-light-back {
+    background-color: $purple-light;
     color: #fff;
 }
 
@@ -173,8 +206,9 @@ h1 {
         width: 32%;
         text-align: justify;
         text-indent: 2em;
+
         p {
-            padding:15px;
+            padding: 15px;
         }
     }
 }
@@ -196,8 +230,9 @@ h1 {
         align-items: center;
         align-content: stretch;
     }
+
     &--bottom {
-      align-items: flex-end;
+        align-items: flex-end;
     }
 }
 
@@ -249,45 +284,113 @@ h1 {
 }
 
 .footer {
-  position: relative;
-  height: 80px;
-  padding: 0;
-  margin-top: 140px;
-  font-size: 16px;
-  img {
-    position: absolute;
-    height: 140px;
+    height: 80px;
     padding: 0;
-    border:10px solid $purple;
-    border-bottom: 4px solid $purple;
-    bottom: 0;
-    left: 0;
-  }
-  div {
-    overflow: hidden;
-  }
-  a {
-    display: inline-block;
-    padding: 0 15px;
-    height: 100%;
-    line-height: 2.5;
-    text-decoration: none;
-    &:hover {
-      background-color: $purple-light;
+    margin-top: 140px;
+    font-size: 16px;
+    width: 100%;
+
+    img {
+        position: absolute;
+        height: 140px;
+        padding: 0;
+        border: 10px solid $purple;
+        border-bottom: 4px solid $purple;
+        bottom: 0;
+        left: 0;
     }
-   }
-  span {
-    color: #fff;
-    padding: 0 5px;
-    line-height: 5;
-  }
-  address {
-    margin: 0;
-    overflow: hidden;
-  }
+
+    div {
+        overflow: hidden;
+    }
+
+    a {
+        display: inline-block;
+        padding: 0 15px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $purple-light;
+        }
+    }
+
+    span {
+        color: #fff;
+        padding: 0 5px;
+        line-height: 4.85;
+    }
+
+    address {
+        margin: 0;
+    }
 }
 
 .copyright {
-  position: absolute;
-  margin-left: 200px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+.purple {
+    color: $purple;
+}
+/* remade Bootstrap styles */
+.nav-tabs.nav-justified {
+    .active {
+        a {
+            @extend .purple-back;
+            border: 1px solid $purple;
+
+            &:hover {
+                @extend .purple-back;
+                border: 1px solid $purple;
+            }
+        }
+    }
+
+    li {
+        border-bottom: 1px solid $purple;
+
+        a {
+            &:hover {
+                @extend .purple-light-back;
+            }
+        }
+    }
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid $purple;
+    font-size: 16px;
+
+    li {
+        background: none;
+        color: #222;
+        display: inline-block;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+        &:hover {
+            background-color: $purple-light;
+            color: #fff;
+        }
+    }
+
+    .current {
+        @extend .purple-back;
+    }
+}
+
+.tab-content {
+    display: none;
+    background: none;
+    padding-top: 15px;
+}
+
+.current {
+    display: inherit;
 }
