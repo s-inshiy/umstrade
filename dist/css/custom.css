@@ -42,19 +42,9 @@ h1 {
         position: relative;
         margin-left: -1px;
         margin-right: -22px; }
-        .menu ul li:nth-child(2) ul {
-          -ms-flex-direction: column;
-          flex-direction: column;
-          position: absolute;
-          width: 100%;
-          top: 20px; }
-          .menu ul li:nth-child(2) ul li {
-            display: block;
-            width: 100%;
-            margin: 0;
-            padding: 0; }
-            .menu ul li:nth-child(2) ul li a {
-              display: block; }
+        .menu ul li:nth-child(2):hover ul {
+          display: -ms-flexbox !important;
+          display: flex !important; }
       .menu ul li:nth-child(3) {
         padding: 0 20px;
         z-index: 1; }
@@ -78,6 +68,22 @@ h1 {
 
 .drpdwn-link:after {
   content: " ▼"; }
+
+.drpdwn-menu {
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: none !important;
+  position: absolute;
+  width: 100%;
+  top: 20px; }
+  .drpdwn-menu li {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important; }
+    .drpdwn-menu li a {
+      display: block;
+      color: #fff !important; }
 
 .topback {
   position: absolute;

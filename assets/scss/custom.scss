@@ -52,19 +52,9 @@ h1 {
                 position: relative;
                 margin-left: -1px;
                 margin-right: -22px;
-                ul {
-                  flex-direction: column;
-                  position: absolute;
-                  width: 100%;
-                  top: 20px;
-                  li {
-                    display: block;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                    a {
-                      display: block;
-                    }
+                &:hover {
+                  ul {
+                    display:flex !important;
                   }
                 }
             }
@@ -111,6 +101,24 @@ h1 {
 .drpdwn-link {
   &:after {
     content: " ▼";
+  }
+}
+
+.drpdwn-menu {
+  flex-direction: column;
+  display: none !important;
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  li {
+    display: block;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    a {
+      display: block;
+      color:#fff !important;
+    }
   }
 }
 
