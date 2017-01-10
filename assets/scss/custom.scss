@@ -11,6 +11,7 @@ $body-bg: url('../images/topback.png'); // Extra materials
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    transition: all .3s ease 0s;
 
     ::selection {
         color: #fff;
@@ -170,10 +171,6 @@ h1 {
     border: 2px solid $purple;
 }
 
-.nowrap {
-    white-space: nowrap;
-}
-
 .purple-back {
     background-color: $purple;
     color: #fff;
@@ -283,6 +280,14 @@ h1 {
     float: right;
 }
 
+.full-width {
+  width: 100%;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
 .footer {
     height: 80px;
     padding: 0;
@@ -332,30 +337,6 @@ h1 {
 
 .purple {
     color: $purple;
-}
-/* remade Bootstrap styles */
-.nav-tabs.nav-justified {
-    .active {
-        a {
-            @extend .purple-back;
-            border: 1px solid $purple;
-
-            &:hover {
-                @extend .purple-back;
-                border: 1px solid $purple;
-            }
-        }
-    }
-
-    li {
-        border-bottom: 1px solid $purple;
-
-        a {
-            &:hover {
-                @extend .purple-light-back;
-            }
-        }
-    }
 }
 
 .tabs {

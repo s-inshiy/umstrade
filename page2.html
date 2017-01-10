@@ -26,10 +26,10 @@
 
 <body>
     <div class="topback"></div>
-    <header class="menu container">
+    <header style="padding-left: 0;" class="menu container">
         <ul class="row">
-            <li><a href="/">На головну</a></li>
-            <li><a class="drpdwn-link" href="#">Приватний кабінет</a>
+            <li><a href="/"><span class="glyphicon glyphicon-home hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">На головну</span></a></li>
+            <li><a class="drpdwn-link" href="#"><span class="glyphicon glyphicon-briefcase hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">Приватний кабінет</span></a>
                 <ul class="drpdwn-menu purple-back">
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
@@ -37,11 +37,11 @@
                     <li><a href="#">Link 4</a></li>
                 </ul>
             </li>
-            <li><img src="dist/images/ums-logo2.jpg" class="logo img-responsive"></li>
-            <li><a href="#">Публікації</a></li>
-            <li><a>Офіс:</a></li>
+            <li><img src="dist/images/ums-logo2.jpg" class="logo img-responsive hidden-sm hidden-xs"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-usd hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">Публікації</span></a></li>
+            <li class="hidden-sm hidden-xs"><a>Офіс:</a></li>
             <li><a href="#" title="У Вас 5 непрочитаних повідомлень"><span class="glyphicon glyphicon-inbox" aria-hidden="true"></span><span class="notification">5</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+            <li><a href="#" title="Мій профіль"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
         </ul>
     </header>
     <div class="container content">
@@ -52,7 +52,7 @@
             <li class="tab-link" data-tab="tab-4">Аукціон</li>
             <li class="tab-link" data-tab="tab-5">Лоти</li>
         </ul>
-        <div id="tab-1" class="tab-content current">
+        <div id="tab-1" class="tab-content current container">
             <div class="row">
                 <table class="table table-bordered table-hover">
                     <tr>

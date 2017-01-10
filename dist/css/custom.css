@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none; }
+  outline: none;
+  transition: all .3s ease 0s; }
   * ::-moz-selection {
     color: #fff;
     background: #FF9800; }
@@ -123,14 +124,11 @@ h1 {
 .bordered {
   border: 2px solid #6C6296; }
 
-.nowrap {
-  white-space: nowrap; }
-
-.purple-back, .nav-tabs.nav-justified .active a, .nav-tabs.nav-justified .active a:hover, .tabs .current {
+.purple-back, .tabs .current {
   background-color: #6C6296;
   color: #fff; }
 
-.purple-light-back, .nav-tabs.nav-justified li a:hover {
+.purple-light-back {
   background-color: #9A91BC;
   color: #fff; }
 
@@ -211,6 +209,12 @@ h1 {
 .right {
   float: right; }
 
+.full-width {
+  width: 100%; }
+
+.caps {
+  text-transform: uppercase; }
+
 .footer {
   height: 80px;
   padding: 0;
@@ -246,15 +250,6 @@ h1 {
 
 .purple {
   color: #6C6296; }
-
-/* remade Bootstrap styles */
-.nav-tabs.nav-justified .active a {
-  border: 1px solid #6C6296; }
-  .nav-tabs.nav-justified .active a:hover {
-    border: 1px solid #6C6296; }
-
-.nav-tabs.nav-justified li {
-  border-bottom: 1px solid #6C6296; }
 
 .tabs {
   margin: 0;
