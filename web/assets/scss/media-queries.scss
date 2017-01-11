@@ -1,1 +1,43 @@
 // File of custom styles for different resolutions
+
+// Variables
+$black: #212121;
+$orange: #FF9800;
+$purple: #6C6296;
+$purple-light: #9A91BC;
+$body-bg: url('../images/topback.png');
+
+// Resolution snippets for respnsive design (uncomment if needed)
+// @media only screen and (max-width: 328px) {
+//
+// }
+//
+//
+// @media only screen and (max-width: 610px) {
+//
+// }
+//
+// @media only screen and (max-width: 780px) {
+//
+// }
+
+@media screen and (max-width: 490px) {
+    .footer {
+        img {
+            position: absolute;
+            height: 80px;
+            padding: 0;
+            border: 10px solid $purple;
+            border-bottom: 4px solid $purple;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .drpdwn-menu {
+        width: 200%;
+        z-index: 2;
+    }
+}

@@ -4,6 +4,7 @@ $orange: #FF9800;
 $purple: #6C6296;
 $purple-light: #9A91BC;
 $body-bg: url('../images/topback.png'); // Extra materials
+
 // Style code itself
 
 * {
@@ -21,6 +22,7 @@ $body-bg: url('../images/topback.png'); // Extra materials
 
 body {
     position: relative;
+    min-height: 480px;
 }
 
 h1 {
@@ -221,6 +223,7 @@ h1 {
     table {
         tr {
             th {
+                border:1px solid $purple-light;
                 &:nth-child(1) {
                     width: 40%;
                 }
@@ -228,6 +231,9 @@ h1 {
                 &:nth-child(2) {
                     width: 30%;
                 }
+            }
+            td {
+              border:1px solid $purple-light;
             }
         }
     }
