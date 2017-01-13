@@ -1,7 +1,7 @@
 {
-  "name": "test.must3r",
+  "name": "epsion",
   "version": "1.0.0",
-  "description": "My test site while learning GULP",
+  "description": "epsion trade",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Hello World\";"
