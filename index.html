@@ -12,11 +12,15 @@
     <!-- Don't forget to write some Open Graph meta-tags if needed -->
     <!-- The title of your site -->
     <title>Epsilon Trade</title>
-    <!-- Bootstrap 3.3.7 is ON -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
     <!-- Your own styles compiled into style.min.css -->
-    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,7 +34,7 @@
         <ul class="row">
             <li><a href="#0"><span class="glyphicon glyphicon-home hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">На головну</span></a></li>
             <li><a href="#0"><span class="glyphicon glyphicon-exclamation-sign hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">Користувачу</span></a></li>
-            <li><img src="/dist/images/epln-logo.png" class="logo img-responsive hidden-sm hidden-xs"></li>
+            <li><img src="src/img/epln-logo.png" class="logo img-responsive hidden-sm hidden-xs"></li>
             <li><a href="/publication.html"><span class="glyphicon glyphicon-usd hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">Публікації</span></a></li>
             <li><a href="#0"><span class="glyphicon glyphicon-log-in hidden-md hidden-lg" aria-hidden="true"></span><span class="hidden-sm hidden-xs">Вхiд</span></a></li>
             <li class="contacts">
@@ -46,7 +50,7 @@
                 <section class="content bordered">
                     <h1 class="purple-back">Про нас</h1>
                     <div class="info-block">
-                        <img src="dist/images/example.jpg" class="col-md-6 col-xs-12" alt="">
+                        <img src="src/img/example.jpg" class="col-md-6 col-xs-12" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe odio quod quidem explicabo modi recusandae deleniti accusantium eum iure, quo amet provident fuga sed aperiam incidunt at est, asperiores impedit commodi. Dignissimos
                             illum nobis quos rerum eveniet id enim repudiandae delectus? Porro maxime ex delectus soluta eum odio voluptatem molestias officiis nostrum, saepe, libero minus, dignissimos blanditiis iure similique eligendi perferendis ratione
                             aperiam facere excepturi quam explicabo nihil ad officia. Sequi temporibus itaque excepturi, maiores nesciunt amet architecto, corrupti soluta consectetur necessitatibus quaerat eum ex ratione possimus officia, reiciendis cumque
@@ -59,15 +63,15 @@
                 </section>
                 <section class="content trinity">
                     <div class="trinity__block">
-                        <img class="img-responsive" src="dist/images/mountain.jpg">
+                        <img class="img-responsive" src="src/img/mountain.jpg">
                         <p class="purple-back">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="trinity__block">
-                        <img class="img-responsive" src="dist/images/map.jpg">
+                        <img class="img-responsive" src="src/img/map.jpg">
                         <p class="purple-back">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     <div class="trinity__block">
-                        <img class="img-responsive" src="dist/images/moose.jpg">
+                        <img class="img-responsive" src="src/img/moose.jpg">
                         <p class="purple-back">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </section>
@@ -175,13 +179,13 @@
                             </div>
                         </div>
                     </div>
-                    <a class="button button--big" href="/#">Дивитись всi публікації</a>
+                    <a class="button button--big" href="/publication.html">Дивитись всi публікації</a>
                 </section>
             </div>
         </div>
     </section>
     <footer class="container-fluid footer purple-back">
-        <img class="logo img-responsive" src="dist/images/epln-logo.png" alt="">
+        <img class="logo img-responsive" src="src/img/epln-logo.png" alt="">
         <span class="copyright hidden-xs hidden-sm">&copy 2017 Все права защищены.</span>
         <address class="text-right">
             <a href="/tel:+380442282914">
@@ -196,10 +200,7 @@
           </address>
     </footer>
 </body>
-<!-- jQuery -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!--<script src="js/bootstrap.min.js"></script>-->
-<script src="dist/js/scripts.min.js"></script>
+
+<script src="src/js/scripts.min.js"></script>
 
 </html>

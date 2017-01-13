@@ -12,60 +12,45 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     bsync = require('browser-sync').create();
 
-// Compiling SCSS to CSS
+// SCSS
 gulp.task('sass', function() {
-    return gulp.src('./assets/scss/**/*.scss')
+    return gulp.src('./src/scss/**/*.scss')
         .pipe(sasstocss())
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./src/css'))
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./src/css'))
         .pipe(cssmin())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./src/css'))
         .pipe(bsync.stream())
 });
 
-// Getting JS files together and Minifying scripts.js
-gulp.task('jsmin', function() {
-    return gulp.src('./assets/js/**/*.js')
+// JS
+gulp.task('js', function() {
+    return gulp.src('./src/js/**/*.js')
         .pipe(concat('scripts.js'))
-        .pipe(gulp.dest('./dist/js'))
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(gulp.dest('./src/js'))
 })
 
-// Minifying HTML files (in case if it's really needed)
-gulp.task('htmlmin', function() {
-    gulp.src('./*.html')
-        .pipe(htmlmin())
-        .pipe(gulp.dest('./dist'))
-})
 
-// Minifying images
-gulp.task('imagemin', function() {
-    gulp.src('./assets/images/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'))
-
-});
-
-// Browser Sync session
-gulp.task('bsync', ['sass'], function() {
+// Browser Sync 
+gulp.task('serve', ['sass'], function() {
     bsync.init({
         server: {
             baseDir: './'
         },
     })
-    gulp.watch('./assets/scss/**/*.scss', ['sass']);
-    gulp.watch('./assets/js/**/*.js', ['jsmin']).on('change', bsync.reload);
+    gulp.watch('./src/scss/**/*.scss', ['sass']);
+    gulp.watch('./src/js/**/*.js', ['js']).on('change', bsync.reload);
     gulp.watch('./*.html').on('change', bsync.reload);
 })
